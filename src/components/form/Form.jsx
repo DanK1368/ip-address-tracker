@@ -1,14 +1,10 @@
 import "./Form.scss";
 import ArrowIcon from "../../images/icon-arrow.svg";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function Form() {
   const [ip, setIp] = useState("188.154.91.6");
   const [ipData, setIpData] = useState("");
-
-  // useEffect(() => {
-  //   getLocationInfo();
-  // }, []);
 
   const getLocationInfo = async e => {
     e.preventDefault();
@@ -37,7 +33,7 @@ function Form() {
         </div>
         <div className="data__container">
           <h2>location</h2>
-          <p>{ipData.location.region}</p>
+          <p></p>
         </div>
         <div className="data__container">
           <h2>timezone</h2>
